@@ -1,0 +1,36 @@
+import random
+
+# Generate a random 3-digit CVV number
+cvv = random.randint(100, 999)
+
+# Concatenate the starting 4 numbers and CVV number to create the full 16-digit number
+credit_card_number = "4118" + str(random.randint(100000000, 999999999)) + str(cvv)
+
+print("Credit Card Number:", credit_card_number)
+print("CVV:", cvv)
+import random
+import time
+
+# Generate a random 3-digit CVV number
+cvv = random.randint(100, 999)
+import random
+import time
+
+# Generate a random month and year
+expiration_month = random.randint(1, 12)
+expiration_year = random.randint(int(time.strftime("%Y")), int(time.strftime("%Y"))+10)
+
+# Format the expiration date as MM/YYYY
+expiration_date = "{:02d}/{:d}".format(expiration_month, expiration_year)
+
+print("Expiration Date:", expiration_date)
+
+import random
+
+first_names = ["Emma", "Noah", "Olivia", "Liam", "Ava", "William", "Sophia", "Mason", "Isabella", "James", "Mia", "Benjamin", "Charlotte", "Jacob", "Abigail", "jeff" "Michael", "jake", "Emily", "Elijah", "Harper", "Ethan", "Amelia", "Alexander", "Evelyn", "Daniel", "Elizabeth", "Matthew", "Sofia", "Aiden", "Madison", "Henry", "Avery", "katelyn"]
+
+last_names = ["Smith", "Johnson", "Williams", "Jones", "Brown", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Perez", "Taylor", "Anderson", "Wilson", "Jackson", "Moore", "Martin", "Lee", "Parker", "Hall", "Young", "Allen", "King", "Wright", "Scott", "Green", "meyers" "Baker"]
+
+full_name = random.choice(first_names) + " " + random.choice(last_names)
+
+print(full_name) 
